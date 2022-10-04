@@ -1,8 +1,8 @@
 Package: NPSdataverse
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: 
-    person("Rob", "Baker", "robert_baker@nps.gov", role = c("aut", "cre"),
+Authors: 
+    person("Rob", "Baker", role = c("aut", "cre"), email="robert_baker@nps.gov",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Maintainer: Rob Baker <robert_baker@nps.gov>
 Description: What the package does (one paragraph).
