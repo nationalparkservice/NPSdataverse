@@ -4,6 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Rob", "Baker", "robert_baker@nps.gov", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
+Maintainer: Rob Baker <robert_baker@nps.gov>
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
@@ -13,12 +14,8 @@ RoxygenNote: 7.2.1
 Imports: 
     cli,
     crayon,
-    DPchecker (>= 0.0.0.9000),
     EML,
     EMLassemblyline,
-    EMLeditor (>= 0.0.0.9000),
-    NPSutils (>= 0.1.0),
-    QCkit (>= 0.1.0),
     rstudioapi,
     utils
 Remotes: 
