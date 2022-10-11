@@ -14,10 +14,6 @@ devtools::install_github("nationalparkservice/NPSdataverse")
 
 NPSdataverse will install the following packages:
 
-
-
-
-
 | Package | Location|
 |---------|---------|
 |EML|CRAN|
