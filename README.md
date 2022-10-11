@@ -12,10 +12,10 @@ devtools::install_github("nationalparkservice/NPSdataverse")
 
 NPSdataverse will install the following packages:
 
-DPchecker
-EMLeditor
-NPSutils
-QCkit
-EML
-EMLassemblyline
+EML (CRAN)
+https://github.com/nationalparkservice/DPchecker
+https://github.com/nationalparkservice/EMLeditor
+https://github.com/nationalparkservice/NPSutils
+https://github.com/nationalparkservice/QCkit
+https://github.com/EDIorg/EMLassemblyline
 
