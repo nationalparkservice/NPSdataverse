@@ -1,7 +1,7 @@
 Package: NPSdataverse
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors: 
+Author: 
     person("Rob", "Baker", role = c("aut", "cre"), email="robert_baker@nps.gov",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Maintainer: Rob Baker <robert_baker@nps.gov>
@@ -13,12 +13,17 @@ RoxygenNote: 7.2.1
 Imports: 
     cli,
     crayon,
+    DPchecker (>= 0.0.0.9000),
     EML,
-    EMLassemblyline,
+    EMLassemblyline (>= 3.5.4),
+    EMLeditor (>= 0.0.1.0),
+    NPSutils (>= 0.1.0),
+    QCkit (>= 0.1.0),
     rstudioapi,
     utils
 Remotes: 
     nationalparkservice/DPchecker,
     nationalparkservice/EMLeditor,
     nationalparkservice/NPSutils,
-    nationalparkservice/QCkit
+    nationalparkservice/QCkit,
+    EDIorg/EMLassemblyline
