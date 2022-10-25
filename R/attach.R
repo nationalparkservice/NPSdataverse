@@ -50,7 +50,7 @@ NPSdataverse_attach <- function() {
   )
 
   # Thanks for playing
-  invisible()
+  invisible(to_load)
 
 }
 
