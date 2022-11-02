@@ -27,3 +27,9 @@ Remotes:
     nationalparkservice/NPSutils,
     nationalparkservice/QCkit,
     EDIorg/EMLassemblyline
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/RobLBaker/NPSdataverse
+BugReports: https://github.com/RobLBaker/NPSdataverse/issues
