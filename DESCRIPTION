@@ -1,11 +1,10 @@
 Package: NPSdataverse
-Title: What the Package Does (One Line, Title Case)
+Title: Tools and Packages for Data and Metadata Manipulation
 Version: 0.0.0.9000
-Author: 
-    person("Rob", "Baker", role = c("aut", "cre"), email="robert_baker@nps.gov",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Maintainer: Rob Baker <robert_baker@nps.gov>
-Description: What the package does (one paragraph).
+Authors@R: 
+    person("Robert", "Baker", , "robert_baker@nps.gov", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7591-5035"))
+Description: Loads a suite of R packages for creating and manipulating data packages including interacting with DataStore.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
