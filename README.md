@@ -24,9 +24,13 @@ NPSdataverse will install the following packages:
 
 | Package               | Location                                           |
 |-----------------------|----------------------------------------------------|
-| EML                   | CRAN                                               |
-| DPchecker             | <https://github.com/nationalparkservice/DPchecker> |
-| EMLeditor             | <https://github.com/nationalparkservice/EMLeditor> |
-| NPSutils              | <https://github.com/nationalparkservice/NPSutils>  |
-| QCkit                 | <https://github.com/nationalparkservice/QCkit>     |
-| EMLassemblyline (EAL) | <https://github.com/EDIorg/EMLassemblyline>        |
+| **QCkit**             | <https://nationalparkservice.github.io/QCkit/>     |
+| EMLassemblyline (EAL) | <https://ediorg.github.io/EMLassemblyline/>        |
+| EML                   | <https://www.cran-e.com/package/EML>               |
+| **EMLeditor**         | <https://nationalparkservice.github.io/EMLeditor/> |
+| **DPchecker**         | <https://github.com/nationalparkservice/DPchecker> |
+| **NPSutils**          | <https://nationalparkservice.github.io/NPSutils/>  |
+
+------------------------------------------------------------------------
+
+(packages in **bold** are developed by NPS)
