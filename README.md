@@ -3,11 +3,11 @@
 
 # NPSdataverse
 
-Loads a suite of R packages for creating and manipulating data packages
-including interacting with DataStore.
-
-This is an early version of the NPSdataverse. Please request
-enhancements and bug fixes through
+<img src="man/figures/NPSdataverse_overview.jpg" width="100%" style="display: block; margin: auto;" />
+NPSdataverse loads a suite of R packages for creating and manipulating
+data packages including interacting with DataStore. This is an early
+version of the NPSdataverse. Please request enhancements and bug fixes
+through
 [Issues](https://github.com/nationalparkservice/NPSdataverse/issues).
 
 ## Installation
