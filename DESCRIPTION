@@ -1,14 +1,19 @@
 Package: NPSdataverse
 Title: Tools and Packages for Data and Metadata Manipulation
 Version: 0.0.0.9000
-Authors@R: 
-    person("Robert", "Baker", , "robert_baker@nps.gov", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0001-7591-5035"))
+Authors@R: c(
+    person(given="Robert", family="Baker", email="robert_baker@nps.gov",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7591-5035")),
+    person(given="Judd", family="Patterson", email="Judd_Patterson@nps.gov",
+           role= "aut",
+           comment = c(ORCID = "0000-0002-0951-7917"))
+    )
 Description: Loads a suite of R packages for creating and manipulating data packages including interacting with DataStore.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Imports: 
     cli,
     crayon,
@@ -30,5 +35,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-URL: https://github.com/RobLBaker/NPSdataverse
-BugReports: https://github.com/RobLBaker/NPSdataverse/issues
+URL: https://github.com/nationalparkservice/NPSdataverse
+BugReports: https://github.com/nationalparkservice/NPSdataverse/issues
