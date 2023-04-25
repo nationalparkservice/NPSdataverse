@@ -15,5 +15,6 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
+devtools::install_github("nationalparkservice/NPSdataverse")
 library(NPSdataverse)
 ```
