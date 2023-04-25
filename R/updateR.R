@@ -42,7 +42,7 @@
 #' @param ...
 #'
 #' @return printed text to console
-#' @keyords internal
+#' @keywords internal
 #'
 .print_cust_package_deps<-function (x, show_ok = FALSE, ...){
   class(x) <- "data.frame"
