@@ -54,7 +54,15 @@ NPSdataverse_attach <- function() {
 
 }
 
-# Detach all loaded packages for seeing the pretty startup message (:
+#' Detach all loaded packages
+#'
+#' @return invisilble
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' NPSdataverse_detach()
+#' }
 NPSdataverse_detach <- function() {
   pak <- paste0("package:", c(pkgs, "NPSdataverse"))
   lapply(pak[pak %in% search()], detach, character.only = TRUE)
