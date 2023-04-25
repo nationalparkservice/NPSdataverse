@@ -21,12 +21,13 @@
       left = cli::pluralize(
         "The following {cli::qty(length(old_pkgs))}package{?s} {?is/are} out of date:\n"))
     msg(load_header)
-    cli::cat_line()
     .print_cust_package_deps(pkg_update)
     cli::cat_line()
-    cli::pluralize("To update {cli::qty(length(old_pkgs))}th{?is/ese} {cli::qty(length(old_pkgs))}package{?s}, please run:\n")
+    cli::cat_line("Please run:\n")
+    cat(instructions)
     cli::cat_line("NPSdataverse_detach()")
     cli::cat_line("devtools::install.github(\"", old_pkgs, "\")")
+    cli::cat_line()
   }
 }
 
