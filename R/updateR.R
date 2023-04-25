@@ -28,8 +28,9 @@
     cli::cat_line()
     .print_cust_package_deps(pkg_update)
     cli::cat_line()
-    cli::cat_line("Start a clean R session then run:\n")
-    cli::cat_line("devtools::install.github(\"", old_pkgs, "\")\n")
+    cli::cat_line("To update these packages, please run:\n")
+    cli::cat_line("NPSdataverse_detach()")
+    cli::cat_line("devtools::install.github(\"", old_pkgs, "\")")
   }
 }
 
