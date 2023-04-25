@@ -25,6 +25,12 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
+    <loc>/reference/dot-print_cust_package_deps.html</loc>
+  </url>
+  <url>
+    <loc>/reference/dot-update_git_repos.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
