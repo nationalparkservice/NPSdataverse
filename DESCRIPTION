@@ -27,7 +27,7 @@ Imports:
     NPSutils (>= 0.1.0),
     QCkit (>= 0.1.0),
     rstudioapi,
-    utils
+    utils,
     remotes
 Remotes: 
     nationalparkservice/DPchecker,
