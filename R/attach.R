@@ -3,7 +3,7 @@ pkgs <- c("DPchecker", "EMLeditor", "NPSutils", "QCkit", "EML", "EMLassemblyline
 
 NPSdataverse_attach <- function() {
   #check for github packages that need updating
-  .update_git_repos
+  .update_git_repos()
 
   # Create `to_load` which is a character vector of all NPSdataverse
   # packages not loaded in the current R session.
