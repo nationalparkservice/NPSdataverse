@@ -1,4 +1,7 @@
 .onAttach <- function(...) {
+  #check for github packages that need updating
+  .update_git_repos()
+
   # See if any packages are needed
   needed <- pkgs[!is_attached(pkgs)]
 
