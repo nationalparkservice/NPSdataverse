@@ -3,7 +3,7 @@
   needed <- pkgs[!is_attached(pkgs)]
 
   #check for updates to github repo packages:
-  .update_git_repos()
+  #.update_git_repos()
 
   # If no packages are needed, return
   if (length(needed) == 0) {
