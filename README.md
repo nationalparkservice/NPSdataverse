@@ -34,3 +34,30 @@ NPSdataverse will install the following packages:
 ------------------------------------------------------------------------
 
 (packages in **bold** are developed by NPS)
+
+## Updating packages
+
+Many of the NPSdataverse packages are in a phase of rapid development.
+NPSdataverse will check for new versions of the packages stored on gitub
+(all the packages except r/EML) each time you load NPSdataverse. If any
+of your packages are out of date, please follow the instructions to
+update them.
+
+## Creating data packages
+
+If you are you are creating a data package and need to generate EML
+metadata make sure all of your .csv data files are in a single folder.
+
+After loading NPSdataverse, from within Rstudio select the “File” menu.
+Select “New File” from the drop down menu and choose “R Markdown”. In
+the dialog box that pops up, select “From Template” and then click on
+the template labelled “Editable_EML_Creation_Workflow” and click “OK”.
+
+<img src="man/figures/open_rmd.png" width="45%" style="display: block; margin: auto;" />
+
+<img src="man/figures/EMLtemplate.png" width="45%" style="display: block; margin: auto;" />
+
+This will open a new file on that you can edit to generate EML metadata
+for your data package. See the [web pages associated with
+EMLeditor](https://nationalparkservice.github.io/EMLeditor/) for
+additional information, instructions, and examples.
