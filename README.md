@@ -20,7 +20,7 @@ You can install the development version of NPSdataverse from
 devtools::install_github("nationalparkservice/NPSdataverse")
 ```
 
-NPSdataverse will install the following packages:
+NPSdataverse will install the following R packages:
 
 | Package               | Location                                           |
 |-----------------------|----------------------------------------------------|
@@ -33,9 +33,9 @@ NPSdataverse will install the following packages:
 
 ------------------------------------------------------------------------
 
-(packages in **bold** are developed by NPS)
+(R packages in **bold** are developed by NPS)
 
-## Updating packages
+## Updating R packages
 
 Many of the NPSdataverse packages are in a phase of rapid development.
 NPSdataverse will check for new versions of the packages stored on gitub
