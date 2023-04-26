@@ -61,9 +61,9 @@ NPSdataverse_attach <- function() {
 #'
 #' @examples
 #' \dontrun{
-#' NPSdataverse_detach()
+#' detach_NPSdataverse()
 #' }
-NPSdataverse_detach <- function() {
+detach_NPSdataverse <- function() {
   pak <- paste0("package:", c(pkgs, "NPSdataverse"))
   lapply(pak[pak %in% search()], detach, character.only = TRUE)
   invisible()
