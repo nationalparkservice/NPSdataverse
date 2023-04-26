@@ -25,6 +25,9 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
+    <loc>/reference/detach_NPSdataverse.html</loc>
+  </url>
+  <url>
     <loc>/reference/dot-print_cust_package_deps.html</loc>
   </url>
   <url>
@@ -32,9 +35,6 @@
   </url>
   <url>
     <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/NPSdataverse_detach.html</loc>
   </url>
   <url>
     <loc>/reference/NPSdataverse_packages.html</loc>
