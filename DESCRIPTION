@@ -1,13 +1,16 @@
 Package: NPSdataverse
 Title: Tools and Packages for Data and Metadata Manipulation
-Version: 0.0.0.9000
+Version: 0.0.0.9
 Authors@R: c(
     person(given="Robert", family="Baker", email="robert_baker@nps.gov",
            role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7591-5035")),
     person(given="Judd", family="Patterson", email="Judd_Patterson@nps.gov",
            role= "aut",
-           comment = c(ORCID = "0000-0002-0951-7917"))
+           comment = c(ORCID = "0000-0002-0951-7917")),
+    person(given="Joe", family="DeVivo", email="Joe_DeVivo@nps.gov",
+           role= "aut",
+           comment = c(ORCID = "0000-0002-0414-7865"))
     )
 Description: Loads a suite of R packages for creating and manipulating data packages including interacting with DataStore.
 License: MIT + file LICENSE
@@ -24,7 +27,8 @@ Imports:
     NPSutils (>= 0.1.0),
     QCkit (>= 0.1.0),
     rstudioapi,
-    utils
+    utils,
+    remotes
 Remotes: 
     nationalparkservice/DPchecker,
     nationalparkservice/EMLeditor,
