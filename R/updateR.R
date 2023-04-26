@@ -23,8 +23,8 @@
     msg(load_header)
     .print_cust_package_deps(pkg_update)
     cli::cat_line()
-    cli::pluralize(
-      "To update {cli::qty(length(old_pkgs))}th{?is/ese} {cli::qty(length(old_pkgs))}package{?s}, please run:\n")
+    cli::cli_text(
+      "{.strong To update {cli::qty(length(old_pkgs))}th{?is/ese} {cli::qty(length(old_pkgs))}package{?s}, please run:\n}")
     cli::cat_line("detach_NPSdataverse()")
     cli::cat_line("devtools::install.github(\"", old_pkgs, "\")")
     cli::cat_line()
