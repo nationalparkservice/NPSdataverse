@@ -4,10 +4,10 @@
 # NPSdataverse
 
 <img src="man/figures/NPSdataverse_overview.jpg" width="100%" style="display: block; margin: auto;" />
-NPSdataverse loads a suite of R packages for creating and manipulating
-data packages including interacting with DataStore. This is an early
-version of the NPSdataverse. Please request enhancements and bug fixes
-through
+NPSdataverse loads a suite of R packages for creating, manipulating, and
+accessing data packages including interacting with DataStore. This is an
+early version of the NPSdataverse. Please request enhancements and bug
+fixes through
 [Issues](https://github.com/nationalparkservice/NPSdataverse/issues).
 
 ## Installation
@@ -28,7 +28,7 @@ NPSdataverse will install the following R packages:
 | EMLassemblyline (EAL) | <https://ediorg.github.io/EMLassemblyline/>        |
 | EML                   | <https://www.cran-e.com/package/EML>               |
 | **EMLeditor**         | <https://nationalparkservice.github.io/EMLeditor/> |
-| **DPchecker**         | <https://github.com/nationalparkservice/DPchecker> |
+| **DPchecker**         | <https://nationalparkservice.github.io/DPchecker/> |
 | **NPSutils**          | <https://nationalparkservice.github.io/NPSutils/>  |
 
 ------------------------------------------------------------------------
