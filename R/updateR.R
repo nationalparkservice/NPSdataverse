@@ -26,7 +26,8 @@
     cli::cli_text(
       "{.strong To update {cli::qty(length(old_pkgs))}th{?is/ese} {cli::qty(length(old_pkgs))}package{?s}, please run:\n}")
     cli::cat_line("detach_NPSdataverse()")
-    cli::cat_line("devtools::install_github(\"nationalparkservice/", old_pkgs, "\")")
+    cli::cat_line("devtools::install_github(\"nationalparkservice/", old_pkgs, "\")\n\n")
+    cli::cat_line("Then close R and Rstudio and re-open a it in a new session.")
     cli::cat_line()
   }
 }
