@@ -6,7 +6,12 @@
 #' @keywords internal
 #'
 .update_git_repos<-function(){
-  git_pkgs = c("NPSdataverse", "QCkit", "EMLeditor", "DPchecker", "NPSutils", "EMLassemblyline")
+  git_pkgs = c("NPSdataverse",
+               "QCkit",
+               "EMLeditor",
+               "DPchecker",
+               "NPSutils",
+               "EMLassemblyline")
   pkg_update <- remotes::package_deps(git_pkgs, dependencies = c("Imports",
                                                                  "Remotes",
                                                                  "Suggests"))
@@ -30,6 +35,14 @@
     cli::cat_line("\nClose R and Rstudio. Open a new R session and reload the NPSdataverse.")
     cli::cat_line()
   }
+  else{
+    load_header <- cli::rule(
+      left = cli::pluralize(
+       "All NPSdataverse packages are up to date."))
+    msg(load_header)
+    cli::cat_line()
+  }
+
 }
 
 #' Custom print function for github repos to update
