@@ -42,9 +42,33 @@ NPSdataverse will install the following R packages:
 ***
 (R packages in **bold** are developed by NPS)
 
-## Updating R packages
+## Trouble shooting installation
 
-Many of the NPSdataverse packages are in a phase of rapid development. NPSdataverse will check for new versions of the packages stored on gitub (all the packages except r/EML) each time you load NPSdataverse. If any of your packages are out of date, please follow the instructions to update them.  
+Each package within the NPSdataverse has a number of dependencies, most of which
+are hosted on CRAN. During the initial install of NPSdataverse, you may be
+prompted to install or update these dependencies. The initial installation can
+take some time and require multiple iterative package updates/installs. 
+Depending on how they were initially installed, some dependent packages may fail
+update or to install. In this case you can try running 
+
+``` r
+.libPaths()
+```
+to find where your packages are located on your local machine. Navigate to that
+location and delete the offending package. Then try to re-install.
+
+
+## Updating NPSdataverse packages
+
+Many of the NPSdataverse packages are in a phase of rapid development. When you
+load the NPSdataverse (using `library(NPSdataverse)`), NPSdataverse will check
+for new versions of the packages stored on GitHub (all the packages except
+r/EML). NPSdataverse will tell you if all your packages are up to date. 
+Conversely if any of the NPSdataverse packages need to be updated, NPSdataverse
+will indicate which packages need updating and how to perform the updates. If 
+you do not get any notices about whether your packages are up to date or not, 
+then the NPSdataverse package itself needs to be updated. See Installation for 
+instructions on how to update the NPSdataverse package.
 
 ## Creating data packages
 
