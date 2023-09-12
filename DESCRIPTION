@@ -1,6 +1,6 @@
 Package: NPSdataverse
 Title: Tools and Packages for Data and Metadata Manipulation
-Version: 0.0.0.9
+Version: 0.0.1
 Authors@R: c(
     person(given="Robert", family="Baker", email="robert_baker@nps.gov",
            role = c("aut", "cre"),
