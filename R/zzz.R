@@ -5,7 +5,7 @@
   if(is_online()){
     .update_git_repos()
   } else {
-    cat("Warning: You are offline. Cannot check for package updates.\n")
+    packageStartupMessage("Warning: You are offline. Cannot check for package updates.\n")
   }
 
   # See if any packages are needed
@@ -23,3 +23,4 @@
   }
 
 }
+
