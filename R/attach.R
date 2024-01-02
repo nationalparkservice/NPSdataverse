@@ -89,3 +89,23 @@ NPSdataverse_packages <- function() {
   return(names)
 
 }
+
+#' Check internet connectivity
+#'
+#' @description Checks whether the system can ping github.com. Adapted from:https://stackoverflow.com/questions/5076593/how-to-determine-if-you-have-an-internet-connection-in-r
+
+#' @param site string defaults to https://github.com
+#'
+#' @return logical
+#' @export
+#'
+#' @examples
+#' is_online()
+is_online <- function(site="https://github.com/") {
+  tryCatch({
+    readLines(site,n=1)
+    TRUE
+  },
+  warning = function(w) invokeRestart("muffleWarning"),
+  error = function(e) FALSE)
+}
