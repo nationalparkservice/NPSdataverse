@@ -1,6 +1,12 @@
 .onAttach <- function(...) {
+  #if internet access is available, check for updated packages:
   #check for github packages that need updating
-  .update_git_repos()
+
+  if(is_online()){
+    .update_git_repos()
+  } else {
+    cat("Warning: You are offline. Cannot check for package updates.\n")
+  }
 
   # See if any packages are needed
   needed <- pkgs[!is_attached(pkgs)]
