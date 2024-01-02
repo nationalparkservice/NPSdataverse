@@ -54,14 +54,4 @@ is_attached <- function(x) {
   paste0("package:", x) %in% search()
 }
 
-# Is the system online?
-# Adapted from:
-# https://stackoverflow.com/questions/5076593/how-to-determine-if-you-have-an-internet-connection-in-r
-is_online <- function(site="http://github.com/") {
-  tryCatch({
-    readLines(site,n=1)
-    TRUE
-  },
-  warning = function(w) invokeRestart("muffleWarning"),
-  error = function(e) FALSE)
-}
+
