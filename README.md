@@ -56,15 +56,15 @@ re-install.
 ## Updating NPSdataverse packages
 
 Many of the NPSdataverse packages are in a phase of rapid development.
-When you load the NPSdataverse (using `library(NPSdataverse)`),
-NPSdataverse will check for new versions of the packages stored on
-GitHub (all the packages except r/EML). NPSdataverse will tell you if
-all your packages are up to date. Conversely if any of the NPSdataverse
-packages need to be updated, NPSdataverse will indicate which packages
-need updating and how to perform the updates. If you do not get any
-notices about whether your packages are up to date or not, then the
-NPSdataverse package itself needs to be updated. See Installation for
-instructions on how to update the NPSdataverse package.
+When you load the NPSdataverse (using `library(NPSdataverse)`), if you
+are online, NPSdataverse will check for new versions of the packages
+stored on GitHub (all the packages except r/EML). NPSdataverse will tell
+you if all your packages are up to date. Conversely if any of the
+NPSdataverse packages need to be updated, NPSdataverse will indicate
+which packages need updating and how to perform the updates. If you do
+not get any notices about whether your packages are up to date or not,
+then the NPSdataverse package itself needs to be updated. See
+Installation for instructions on how to update the NPSdataverse package.
 
 ## Creating data packages
 
