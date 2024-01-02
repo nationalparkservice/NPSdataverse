@@ -15,7 +15,7 @@
   pkg_update <- remotes::package_deps(git_pkgs, dependencies = c("Imports",
                                                                  "Remotes",
                                                                  "Suggests"))
-  if(any(pkg_update$diff < 0)){
+  if(any(pkg_update$diff > 0)){
     old_pkgs <- NULL
     for(i in seq_along(pkg_update$diff)){
       if(pkg_update$diff[i] != 0){
