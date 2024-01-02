@@ -12,14 +12,18 @@
                "DPchecker",
                "NPSutils",
                "EMLassemblyline")
+
   pkg_update <- remotes::package_deps(git_pkgs, dependencies = c("Imports",
                                                                  "Remotes",
                                                                  "Suggests"))
-  if(any(pkg_update$diff > 0)){
+
+  if(any(pkg_update$diff < 0)){
     old_pkgs <- NULL
+    old_users <- NULL
     for(i in seq_along(pkg_update$diff)){
-      if(pkg_update$diff[i] != 0){
+      if(pkg_update$diff[i] < 0){
         old_pkgs <- append(old_pkgs, pkg_update$package[i])
+        old_users <- append(old_users, pkg_update$remote[[i]]$username)
       }
     }
     load_header <- cli::rule(
@@ -31,7 +35,7 @@
     cli::cli_text(
       "{.strong To update {cli::qty(length(old_pkgs))}th{?is/ese} {cli::qty(length(old_pkgs))}package{?s}, please run:\n}")
     cli::cat_line("detach_NPSdataverse()")
-    cli::cat_line("devtools::install_github(\"nationalparkservice/", old_pkgs, "\")")
+    cli::cat_line("devtools::install_github(\"", old_users, "/", old_pkgs, "\")")
     cli::cat_line("\nClose R and Rstudio. Open a new R session and reload the NPSdataverse.")
     cli::cat_line()
   }
