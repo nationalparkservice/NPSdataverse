@@ -1,5 +1,10 @@
 # NPSdataverse 0.0.2
 
+2024-07-26
+* Updated license from MIT to CC0.
+* Start paper.md for JOSS
+* Add paper.bib for JOSS
+
 2024-01-02
 
 * Added function ability to load NPSdataverse (using library()) when offline
