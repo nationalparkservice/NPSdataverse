@@ -1,9 +1,14 @@
-# NPSdataverse 0.0.2
+# NPSdataverse 0.1.0
+
+2024-08-19
+* Reduce github.com API rate limits by only hitting API in interactive session.
 
 2024-07-26
 * Updated license from MIT to CC0.
 * Start paper.md for JOSS
 * Add paper.bib for JOSS
+
+# NPSdataverse 0.0.2
 
 2024-01-02
 

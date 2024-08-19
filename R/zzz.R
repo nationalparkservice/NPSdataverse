@@ -2,8 +2,10 @@
   #if internet access is available, check for updated packages:
   #check for github packages that need updating
 
-  if(is_online()){
-    .update_git_repos()
+  if(is_online()) {
+    if (interactive()) {
+      .update_git_repos()
+    }
   } else {
     packageStartupMessage("Warning: You are offline. Cannot check for package updates.\n")
   }

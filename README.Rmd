@@ -14,8 +14,16 @@ knitr::opts_chunk$set(
 ```
 
 # NPSdataverse
+
 ```{r echo=FALSE, fig.align="center"}
+#| fig.alt: >
+#|  Image diagraming NPSdataverse and its consituent packages using hexicons
+#|  A hexicon of NPSdataverse points to the hexicons for the 4 NPS-maintained
+#|  packages that load with the NPSdataverse: QCkit, EMLeditor, DPchecker, and
+#|  NPSutils. The key external packages EML and EMLassemblyline that also load
+#|  are included in a text box.
 knitr::include_graphics("man/figures/NPSdataverse_overview.jpg")
+#![alt text]("man/figures/NPSdataverse_overview.jpg")
 ```
 NPSdataverse loads a suite of R packages for creating, manipulating, and accessing data packages including interacting with DataStore. This is an early version of the NPSdataverse. Please request enhancements and bug fixes through [Issues](https://github.com/nationalparkservice/NPSdataverse/issues).
 
@@ -77,12 +85,18 @@ If you are you are creating a data package and need to generate EML metadata mak
 After loading NPSdataverse, from within Rstudio select the "File" menu. Select "New File" from the drop down menu and choose "R Markdown". In the dialog box that pops up, select "From Template" and then click on the template labelled "Editable_EML_Creation_Workflow" and click "OK". 
 
 ```{r echo=FALSE, out.width='45%', fig.align="center"}
+#| fig.alt: >
+#|    A screenshot with highlights indicating how to access the EML script
+#|    This figure shows step 1.
 knitr::include_graphics("man/figures/open_rmd.png")
 
 ```
 
  
 ```{r echo=FALSE, out.width='45%', fig.show='hold', fig.align='center'}
+#| fig.alt: >
+#|    A screenshot with highlights indicating how to access the EML script
+#|    This figure shows step 2.
 knitr::include_graphics("man/figures/EMLtemplate.png")
 ```
 

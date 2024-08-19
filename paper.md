@@ -35,6 +35,9 @@ authors:
     orcid: 0000-0003-1439-2204
     equal-contrib: true
     affiliation: 1
+  - name: Carl Boettiger
+    orcid: 0000-0002-1642-628X
+    affiliation: 5
   - name: Judd M. Patterson
     orcid: 0000-0002-0951-7917
     equal-contrib: true
@@ -52,7 +55,9 @@ affiliations:
     index: 3
   - name: Student Conservation Association, USA
     index: 4
-date: 24 July 2024
+  - name: University of California, Berkeley, USA
+    index: 5
+date: 19 August 2024
 bibliography: paper.bib
 editor_options: 
   markdown: 

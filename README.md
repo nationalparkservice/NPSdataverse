@@ -3,7 +3,7 @@
 
 # NPSdataverse
 
-<img src="man/figures/NPSdataverse_overview.jpg" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/NPSdataverse_overview.jpg" alt="Image diagraming NPSdataverse and its consituent packages using hexicons A hexicon of NPSdataverse points to the hexicons for the 4 NPS-maintained packages that load with the NPSdataverse: QCkit, EMLeditor, DPchecker, and NPSutils. The key external packages EML and EMLassemblyline that also load are included in a text box." width="100%" style="display: block; margin: auto;" />
 NPSdataverse loads a suite of R packages for creating, manipulating, and
 accessing data packages including interacting with DataStore. This is an
 early version of the NPSdataverse. Please request enhancements and bug
@@ -76,9 +76,9 @@ Select “New File” from the drop down menu and choose “R Markdown”. In
 the dialog box that pops up, select “From Template” and then click on
 the template labelled “Editable_EML_Creation_Workflow” and click “OK”.
 
-<img src="man/figures/open_rmd.png" width="45%" style="display: block; margin: auto;" />
+<img src="man/figures/open_rmd.png" alt="A screenshot with highlights indicating how to access the EML script This figure shows step 1." width="45%" style="display: block; margin: auto;" />
 
-<img src="man/figures/EMLtemplate.png" width="45%" style="display: block; margin: auto;" />
+<img src="man/figures/EMLtemplate.png" alt="A screenshot with highlights indicating how to access the EML script This figure shows step 2." width="45%" style="display: block; margin: auto;" />
 
 This will open a new file on that you can edit to generate EML metadata
 for your data package. See the [web pages associated with
