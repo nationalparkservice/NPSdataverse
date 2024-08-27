@@ -1,18 +1,19 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/404.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/articles/index.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/articles/NPSdataverse.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/authors.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/index.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/LICENSE-text.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/LICENSE.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/news/index.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/paper.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/reference/detach_NPSdataverse.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/reference/dot-print_cust_package_deps.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/reference/dot-update_git_repos.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/reference/index.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/reference/is_online.html</loc></url>
-<url><loc>https://github.com/nationalparkservice/NPSdataverse/reference/NPSdataverse_packages.html</loc></url>
+<url><loc>/404.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/articles/NPSdataverse.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/paper.html</loc></url>
+<url><loc>/reference/detach_NPSdataverse.html</loc></url>
+<url><loc>/reference/dot-print_cust_package_deps.html</loc></url>
+<url><loc>/reference/dot-update_git_repos.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/is_online.html</loc></url>
+<url><loc>/reference/NPSdataverse-package.html</loc></url>
+<url><loc>/reference/NPSdataverse_packages.html</loc></url>
 </urlset>
 

@@ -16,7 +16,7 @@ Description: Loads a suite of R packages for creating and manipulating data pack
 License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Imports: 
     cli,
     crayon,
@@ -28,7 +28,8 @@ Imports:
     QCkit (>= 0.1.0),
     rstudioapi,
     utils,
-    remotes
+    remotes,
+    lifecycle
 Remotes: 
     nationalparkservice/DPchecker,
     nationalparkservice/EMLeditor,
