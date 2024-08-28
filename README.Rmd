@@ -4,6 +4,10 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+ <!-- badges: start -->
+  [![R-CMD-check](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end -->
+
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -32,8 +36,8 @@ NPSdataverse loads a suite of R packages for creating, manipulating, and accessi
 You can install the development version of NPSdataverse from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("nationalparkservice/NPSdataverse")
+# install.packages("pak")
+pak::pkg_install("nationalparkservice/NPSdataverse")
 ```
 
 NPSdataverse will install the following R packages:

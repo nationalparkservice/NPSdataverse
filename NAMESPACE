@@ -3,3 +3,4 @@
 export(NPSdataverse_packages)
 export(detach_NPSdataverse)
 export(is_online)
+importFrom(lifecycle,deprecated)

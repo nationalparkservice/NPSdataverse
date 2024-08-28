@@ -1,6 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 # NPSdataverse
 
 <img src="man/figures/NPSdataverse_overview.jpg" alt="Image diagraming NPSdataverse and its consituent packages using hexicons A hexicon of NPSdataverse points to the hexicons for the 4 NPS-maintained packages that load with the NPSdataverse: QCkit, EMLeditor, DPchecker, and NPSutils. The key external packages EML and EMLassemblyline that also load are included in a text box." width="100%" style="display: block; margin: auto;" />
@@ -16,8 +20,8 @@ You can install the development version of NPSdataverse from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("nationalparkservice/NPSdataverse")
+# install.packages("pak")
+pak::pkg_install("nationalparkservice/NPSdataverse")
 ```
 
 NPSdataverse will install the following R packages:
