@@ -57,6 +57,7 @@
 #' @param show_ok logical.
 #' @param ...
 #'
+#' @noRd
 #' @return printed text to console
 #' @keywords internal
 #'
