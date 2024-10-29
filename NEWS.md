@@ -1,3 +1,6 @@
+# NPSdataverse 0.1.1 (development version)
+* Load EMLassemblyline v3.5.5 from github release rather than the development version.
+
 # NPSdataverse 0.1.0
 
 2024-08-19
