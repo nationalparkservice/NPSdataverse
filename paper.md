@@ -17,10 +17,10 @@ tags:
 - data access
 date: "21 October 2024"
 output:
-  pdf_document: default
+  word_document: default
   html_document:
     df_print: paged
-  word_document: default
+  pdf_document: default
 authors:
 - name: Robert L. Baker
   orcid: "0000-0001-7591-5035"
