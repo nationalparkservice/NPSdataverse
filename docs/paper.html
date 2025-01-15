@@ -103,7 +103,7 @@
 <span>                            ror_id <span class="op">=</span> <span class="st">""</span>,</span>
 <span>                            for_or_by_NPS <span class="op">=</span> <span class="cn">FALSE</span>,</span>
 <span>                            NPS <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre>
-<p>By default, <code>EMLeditor</code> functions provide verbose user feedback and may require user input to confirm some operations. These checks are intended to help guide users, prevent inadvertent mistakes, and limit unnecessary API calls. However, requiring user input can hamper highly scripted approaches and limits reproducability. Therefore, all <code>EMLeditor</code> functions can be set to circumvent these requirements using the parameter <code>force = FALSE</code>.</p>
+<p>By default, <code>EMLeditor</code> functions provide verbose user feedback and may require user input to confirm some operations. These checks are intended to help guide users, prevent inadvertent mistakes, and limit unnecessary API calls. However, requiring user input can hamper highly scripted approaches and limits reproducibility. Therefore, all <code>EMLeditor</code> functions can be set to circumvent these requirements using the parameter <code>force = TRUE</code>.</p>
 <pre><code><span><span class="co">#example setting the abstract while suppressing user feedback and input:</span></span>
 <span></span>
 <span><span class="va">new_metadata</span> <span class="op">&lt;-</span> <span class="fu">set_abstract</span><span class="op">(</span>eml_object <span class="op">=</span> <span class="va">old_metadata</span>,</span>
@@ -117,19 +117,19 @@
 <li>Metadata elements necessary for DataStore automated extraction are present (creators have valid surnames, publication date is present and in the correct ISO-8601 format, keywords are present, abstract and methods are present and well formatted, etc).</li>
 <li>Recommended EML elements are present including ORCiDs and a notes section.</li>
 <li>Metadata and data are in congruence including all files listed in metadata refer to data files, the columns in the metadata match the columns in the data files, missing fields in data files are properly documented in metadata, and dates in data files fall within the date ranges given in the metadata, etc.</li>
-<li>Data and metadata are in compliance with (a subset of) federal regulations including tests for information that should not be released to the public such as non-.gov emails and GPS coordinates for restricted data packages.</li>
+<li>Data and metadata are in compliance with (a subset of) federal regulations including tests for information that should not be released to the public such as non-.gov emails.</li>
 </ol><p>For each test, the data package may fail with an error, fail with a warning, or pass. When possible, warnings and error messages indicate the appropriate <code>EMLeditor</code> function to address the problem. <code>DPchecker</code> will often throw a warning even if an EML element exists and is properly formatted but could by improved to increase the FAIR characteristics of the metadata. For instance, <code>DPchecker</code> will throw a warning if an abstract is less than 20 words long as it is unlikely the creator is able to meaningfully describe the data collection and processing in less than 20 words.</p>
 </div>
 <div class="section level1">
 <h1 id="npsutils-r-package">NPSutils R Package<a class="anchor" aria-label="anchor" href="#npsutils-r-package"></a></h1>
-<p>The <code>[NPSutils](https://nationalparkservice.github.io/NPSutils/)</code> (“NPS utilities”) package serves primarily as a way to access data [@Baker_NPSutils2024]. <code>NPSutils</code> provides avenues for directly downloading data from DataStore using R. <code>NPSutils</code> can also import data downloaded from any repository into R and take advantage of rich EML metadata to call column types. <code>NPSutils</code> provides some basic meta-analysis capability, assuming certain interoperabilty standards are met (such as consistently naming columns with Darwin Core parameters or other domain-accepted parameter names). <code>NPSutils</code> can also be used to import data and metadata into common data visualization tools.</p>
+<p>The <code>[NPSutils](https://nationalparkservice.github.io/NPSutils/)</code> (“NPS utilities”) package serves primarily as a way to access data [@Baker_NPSutils2024]. <code>NPSutils</code> provides avenues for directly downloading data from DataStore using R. <code>NPSutils</code> can also import data downloaded from any repository into R and take advantage of rich EML metadata to call column types. <code>NPSutils</code> provides some basic meta-analysis capability. <code>NPSutils</code> can also be used to import data and metadata into common data visualization tools.</p>
 <p>Example of how to download and access data:</p>
 <pre><code><span><span class="co"># download a data package from datastore:</span></span>
 <span><span class="co"># the data package will be downloaded to ./data/2300498</span></span>
 <span></span>
 <span><span class="fu">NPSutils</span><span class="fu">::</span><span class="fu"><a href="https://nationalparkservice.github.io/NPSutils/reference/get_data_packages.html" class="external-link">get_data_package</a></span><span class="op">(</span><span class="fl">2300498</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># load the data package into R:</span></span>
+<span><span class="co"># load the data package into R, and use the metadata to call column types</span></span>
 <span><span class="co"># returns a list of tibbles; each tibble corresponds to a single data file</span></span>
 <span></span>
 <span><span class="va">mojn</span> <span class="op">&lt;-</span> <span class="fu">NPSutils</span><span class="fu">::</span><span class="fu"><a href="https://nationalparkservice.github.io/NPSutils/reference/load_data_packages.html" class="external-link">load_data_package</a></span><span class="op">(</span><span class="fl">2300498</span>, assign_attributes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre>
