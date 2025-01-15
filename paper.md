@@ -17,10 +17,10 @@ tags:
 - data access
 date: "21 October 2024"
 output:
-  word_document: default
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
+  word_document: default
 authors:
 - name: Robert L. Baker
   orcid: "0000-0001-7591-5035"
@@ -134,7 +134,7 @@ new_metadata2 <- set_publisher(eml_object = new_metadata1,
                             for_or_by_NPS = FALSE,
                             NPS = FALSE)
 ```
-By default, `EMLeditor` functions provide verbose user feedback and may require user input to confirm some operations. These checks are intended to help guide users, prevent inadvertent mistakes, and limit unnecessary API calls. However, requiring user input can hamper highly scripted approaches and limits reproducability. Therefore, all `EMLeditor` functions can be set to circumvent these requirements using the parameter `force = FALSE`. 
+By default, `EMLeditor` functions provide verbose user feedback and may require user input to confirm some operations. These checks are intended to help guide users, prevent inadvertent mistakes, and limit unnecessary API calls. However, requiring user input can hamper highly scripted approaches and limits reproducibility. Therefore, all `EMLeditor` functions can be set to circumvent these requirements using the parameter `force = TRUE`. 
 
 ```
 #example setting the abstract while suppressing user feedback and input:
@@ -152,13 +152,13 @@ The [DPchecker](https://nationalparkservice.github.io/DPchecker/) ("Data Package
   2. Metadata elements necessary for DataStore automated extraction are present (creators have valid surnames, publication date is present and in the correct ISO-8601 format, keywords are present, abstract and methods are present and well formatted, etc). 
   3. Recommended EML elements are present including ORCiDs and a notes section. 
   4. Metadata and data are in congruence including all files listed in metadata refer to data files, the columns in the metadata match the columns in the data files, missing fields in data files are properly documented in metadata, and dates in data files fall within the date ranges given in the metadata, etc. 
-  5. Data and metadata are in compliance with (a subset of) federal regulations including tests for information that should not be released to the public such as non-.gov emails and GPS coordinates for restricted data packages. 
+  5. Data and metadata are in compliance with (a subset of) federal regulations including tests for information that should not be released to the public such as non-.gov emails. 
 
 For each test, the data package may fail with an error, fail with a warning, or pass. When possible, warnings and error messages indicate the appropriate `EMLeditor` function to address the problem. `DPchecker` will often throw a warning even if an EML element exists and is properly formatted but could by improved to increase the FAIR characteristics of the metadata. For instance, `DPchecker` will throw a warning if an abstract is less than 20 words long as it is unlikely the creator is able to meaningfully describe the data collection and processing in less than 20 words.
 
 # NPSutils R Package
 
-The `[NPSutils](https://nationalparkservice.github.io/NPSutils/)` ("NPS utilities") package serves primarily as a way to access data [@Baker_NPSutils2024]. `NPSutils` provides avenues for directly downloading data from DataStore using R. `NPSutils` can also import data downloaded from any repository into R and take advantage of rich EML metadata to call column types. `NPSutils` provides some basic meta-analysis capability, assuming certain interoperabilty standards are met (such as consistently naming columns with Darwin Core parameters or other domain-accepted parameter names). `NPSutils` can also be used to import data and metadata into common data visualization tools.
+The `[NPSutils](https://nationalparkservice.github.io/NPSutils/)` ("NPS utilities") package serves primarily as a way to access data [@Baker_NPSutils2024]. `NPSutils` provides avenues for directly downloading data from DataStore using R. `NPSutils` can also import data downloaded from any repository into R and take advantage of rich EML metadata to call column types. `NPSutils` provides some basic meta-analysis capability. `NPSutils` can also be used to import data and metadata into common data visualization tools.
 
 Example of how to download and access data:
 ```
@@ -167,7 +167,7 @@ Example of how to download and access data:
 
 NPSutils::get_data_package(2300498)
 
-# load the data package into R:
+# load the data package into R, and use the metadata to call column types
 # returns a list of tibbles; each tibble corresponds to a single data file
 
 mojn <- NPSutils::load_data_package(2300498, assign_attributes = TRUE)

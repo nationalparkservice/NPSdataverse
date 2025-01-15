@@ -22,7 +22,7 @@ Imports:
     crayon,
     DPchecker (>= 0.0.0.9000),
     EML,
-    EMLassemblyline (>= 3.5.4),
+    EMLassemblyline,
     EMLeditor (>= 0.0.1.0),
     NPSutils (>= 0.1.0),
     QCkit (>= 0.1.0),
