@@ -33,7 +33,7 @@ authors:
   orcid: "0000-0001-7591-5035"
   equal-contrib: true
   affiliation: 1
-- name: Collin Smith
+- name: Colin Smith
   orcid: "0000-0003-2261-9931"
   equal-contrib: true
   affiliation: 2, 3
