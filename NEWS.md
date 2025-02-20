@@ -1,4 +1,6 @@
 # NPSdataverse 0.1.1 (development version)
+* In paper.bib add DOIs for R packages; fix broken reference URL
+* In readme.rmd add JOSS submitted badge
 * Load EMLassemblyline v3.5.5 from github release rather than the development version.
 
 # NPSdataverse 0.1.0
