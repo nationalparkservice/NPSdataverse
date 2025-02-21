@@ -1,9 +1,14 @@
-# NPSdataverse 0.1.1 (development version)
+# NPSdataverse 1.0.1 (development version)
+
+2025-02-21
+* Add CONTRIBUTING.md
+
+2025-02-20
 * In paper.bib add DOIs for R packages; fix broken reference URL
 * In readme.rmd add JOSS submitted badge
 * Load EMLassemblyline v3.5.5 from github release rather than the development version.
 
-# NPSdataverse 0.1.0
+# NPSdataverse 1.0.0
 
 2024-08-19
 * Reduce github.com API rate limits by only hitting API in interactive session.
