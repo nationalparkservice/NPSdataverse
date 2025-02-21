@@ -6,6 +6,7 @@ output: github_document
 
 <!-- badges: start -->
   [![R-CMD-check](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml)
+  [![status](https://joss.theoj.org/papers/4f0f426403cd0e5f089ad527fb66ce51/status.svg)](https://joss.theoj.org/papers/4f0f426403cd0e5f089ad527fb66ce51)
   <!-- badges: end -->
 
 ```{r, include = FALSE}
@@ -84,7 +85,7 @@ instructions on how to update the NPSdataverse package.
 
 ## Creating data packages
 
-If you are you are creating a data package and need to generate EML metadata make sure all of your .csv data files are in a single folder. 
+If you are creating a data package and need to generate EML metadata make sure all of your .csv data files are in a single folder. 
 
 After loading NPSdataverse, from within Rstudio select the "File" menu. Select "New File" from the drop down menu and choose "R Markdown". In the dialog box that pops up, select "From Template" and then click on the template labelled "Editable_EML_Creation_Workflow" and click "OK". 
 

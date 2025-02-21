@@ -15,7 +15,7 @@ tags:
 - data package
 - data publication
 - data access
-date: "29 January 2025"
+date: "20 February 2025"
 output: pdf_document
 affiliations:
 - name: National Park Service, USA
