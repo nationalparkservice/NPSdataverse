@@ -1,5 +1,7 @@
 # NPSdataverse 1.0.1 (development version)
 
+2025-02-25
+* Bug fix in CONTRIBUTING.md
 2025-02-21
 * Add CONTRIBUTING.md
 
