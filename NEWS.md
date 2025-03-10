@@ -1,4 +1,6 @@
 # NPSdataverse 1.0.1 (development version)
+2025-03-10
+* Updated license to OSI-approved "Zero-Clause BSD" in support of JOSS submission.
 
 2025-02-25
 * Bug fix in CONTRIBUTING.md
