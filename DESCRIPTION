@@ -1,6 +1,6 @@
 Package: NPSdataverse
 Title: Tools and Packages for Data and Metadata Manipulation
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person(given="Robert", family="Baker", email="robert_baker@nps.gov",
            role = c("aut", "cre"),
@@ -13,7 +13,7 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-0414-7865"))
     )
 Description: Loads a suite of R packages for creating and manipulating data packages including interacting with DataStore.
-License: CC0
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
