@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 #|  NPSutils. The key external packages EML and EMLassemblyline that also load
 #|  are included in a text box.
 knitr::include_graphics("man/figures/NPSdataverse_overview.jpg")
-#![alt text]("man/figures/NPSdataverse_overview.jpg")
+# ![alt text]("man/figures/NPSdataverse_overview.jpg")
 ```
 NPSdataverse loads a suite of R packages for creating, manipulating, and accessing data packages including interacting with DataStore. This is an early version of the NPSdataverse. Please request enhancements and bug fixes through [Issues](https://github.com/nationalparkservice/NPSdataverse/issues).
 
@@ -94,7 +94,6 @@ After loading NPSdataverse, from within Rstudio select the "File" menu. Select "
 #|    A screenshot with highlights indicating how to access the EML script
 #|    This figure shows step 1.
 knitr::include_graphics("man/figures/open_rmd.png")
-
 ```
 
  

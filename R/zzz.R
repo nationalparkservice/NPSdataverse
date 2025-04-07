@@ -1,8 +1,8 @@
 .onAttach <- function(...) {
-  #if internet access is available, check for updated packages:
-  #check for github packages that need updating
+  # if internet access is available, check for updated packages:
+  # check for github packages that need updating
 
-  if(is_online()) {
+  if (is_online()) {
     if (interactive()) {
       .update_git_repos()
     }
@@ -13,8 +13,8 @@
   # See if any packages are needed
   needed <- pkgs[!is_attached(pkgs)]
 
-  #check for updates to github repo packages:
-  #.update_git_repos()
+  # check for updates to github repo packages:
+  # .update_git_repos()
 
   # If no packages are needed, return
   if (length(needed) == 0) {
@@ -23,6 +23,4 @@
   } else {
     NPSdataverse_attach()
   }
-
 }
-

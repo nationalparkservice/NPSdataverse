@@ -1,6 +1,4 @@
-
 text_col <- function(x) {
-
   # If RStudio API is not available and/or does not have the getThemeInfo
   # button, exit function leaving default color of black
   if (!rstudioapi::isAvailable() || !rstudioapi::hasFun("getThemeInfo")) {
@@ -12,7 +10,6 @@ text_col <- function(x) {
 
   # If it's a dark theme, make the text color white; otherwise black.
   if (isTRUE(theme$dark)) crayon::white(x) else crayon::black(x)
-
 }
 
 # Format the package version to indicate development versions when printed on
@@ -31,7 +28,6 @@ package_version <- function(x) {
 
   # concatenate the result
   paste0(version, collapse = ".")
-
 }
 
 # Create a message function for start-up that dynamically changes text color
@@ -53,5 +49,3 @@ check_loaded <- function() {
 is_attached <- function(x) {
   paste0("package:", x) %in% search()
 }
-
-

@@ -1,4 +1,3 @@
-
 pkgs <- c("DPchecker", "EMLeditor", "NPSutils", "QCkit", "EML", "EMLassemblyline")
 
 NPSdataverse_attach <- function() {
@@ -51,7 +50,6 @@ NPSdataverse_attach <- function() {
 
   # Thanks for playing
   invisible(to_load)
-
 }
 
 #' Detach all loaded packages
@@ -87,7 +85,6 @@ NPSdataverse_packages <- function() {
   names <- vapply(strsplit(parsed, "\\s+"), "[[", 1, FUN.VALUE = character(1))
 
   return(names)
-
 }
 
 #' Check internet connectivity
@@ -101,11 +98,13 @@ NPSdataverse_packages <- function() {
 #'
 #' @examples
 #' is_online()
-is_online <- function(site="https://github.com/") {
-  tryCatch({
-    readLines(site,n=1)
-    TRUE
-  },
-  warning = function(w) invokeRestart("muffleWarning"),
-  error = function(e) FALSE)
+is_online <- function(site = "https://github.com/") {
+  tryCatch(
+    {
+      readLines(site, n = 1)
+      TRUE
+    },
+    warning = function(w) invokeRestart("muffleWarning"),
+    error = function(e) FALSE
+  )
 }
