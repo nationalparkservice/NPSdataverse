@@ -20,12 +20,12 @@ RoxygenNote: 7.3.2
 Imports: 
     cli,
     crayon,
-    DPchecker (>= 0.0.0.9000),
+    DPchecker (>= 1.0.0),
     EML,
-    EMLassemblyline,
-    EMLeditor (>= 0.0.1.0),
-    NPSutils (>= 0.1.0),
-    QCkit (>= 0.1.0),
+    EMLassemblyline (>= 3.5.7),
+    EMLeditor (>= 1.0.0),
+    NPSutils (>= 1.0.0),
+    QCkit (>= 1.0.0),
     rstudioapi,
     utils,
     remotes,
@@ -35,7 +35,7 @@ Remotes:
     nationalparkservice/EMLeditor,
     nationalparkservice/NPSutils,
     nationalparkservice/QCkit,
-    EDIorg/EMLassemblyline@v3.5.5
+    EDIorg/EMLassemblyline
 Suggests: 
     knitr,
     rmarkdown
