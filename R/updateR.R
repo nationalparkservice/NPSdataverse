@@ -92,3 +92,34 @@
     )
   }
 }
+
+#' Get the latest version of an R package that is on GitHub
+#'
+#' @param repo Name of the GitHub repository (e.g. "DPchecker")
+#' @param repo_owner Owner of the GitHub repository (e.g. "nationalparkservice")
+#' @param branch Branch to use (defaults to "main")
+#' @param release_only If TRUE, only looks at GitHub releases. If FALSE (default), looks at the version number in the DESCRIPTION file.
+#'
+#' @returns A package version number
+#' @keywords internal
+#'
+.latest_github_version <- function(repo, repo_owner, branch = "main", release_only = FALSE) {
+  if (!release_only) {
+    # Get version number from DESCRIPTION file on GitHub
+    description_url <- paste("https://raw.githubusercontent.com", repo_owner, repo, "refs", "heads", branch, "DESCRIPTION", sep = "/")
+    description <- readr::read_lines(description_url)
+    version_line <- grep("^Version:\\s*", description)
+    version_number <- stringr::str_remove(description[version_line], "^Version:\\s*")
+  }
+  else {
+    # Get version number of latest release on GitHub
+    releases_url <- paste("https://api.github.com/repos", repo_owner, repo, "releases?per_page=1", sep = "/")
+    latest_release <- gh::gh(releases_url)
+    version_number <- latest_release[[1]]$tag_name
+  }
+
+  version_number <- stringr::str_remove_all(version_number, "[a-zA-Z]")
+  version_number <- as.package_version(version_number)
+
+  return(version_number)
+}
