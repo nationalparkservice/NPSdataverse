@@ -106,7 +106,7 @@
 .latest_github_version <- function(repo, repo_owner, branch = "main", release_only = FALSE) {
   if (!release_only) {
     # Get version number from DESCRIPTION file on GitHub
-    description_url <- paste("https://raw.githubusercontent.com", repo_owner, repo, "refs", "heads", branch, "DESCRIPTION", sep = "/")
+    description_url <- paste("https://raw.githubusercontent.com", repo_owner, repo, branch, "DESCRIPTION", sep = "/")
     description <- readr::read_lines(description_url)
     version_line <- grep("^Version:\\s*", description)
     version_number <- stringr::str_remove(description[version_line], "^Version:\\s*")
