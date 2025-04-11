@@ -19,7 +19,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
     cli,
-    crayon,
     DPchecker (>= 1.0.0),
     EML,
     EMLassemblyline (>= 3.5.7),

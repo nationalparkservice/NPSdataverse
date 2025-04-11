@@ -35,7 +35,7 @@
         "The following {cli::qty(length(old_pkgs))}package{?s} {?is/are} out of date:\n"
       )
     )
-    msg(load_header)
+    packageStartupMessage(load_header)
     .print_cust_package_deps(pkg_update)
     cli::cat_line()
     cli::cli_text(
@@ -51,7 +51,7 @@
         "All NPSdataverse packages are up to date."
       )
     )
-    msg(load_header)
+    packageStartupMessage(load_header)
     cli::cat_line()
   }
 }
