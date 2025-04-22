@@ -84,8 +84,8 @@
 <p>NPSdataverse will install the following R packages:</p>
 <table class="table">
 <colgroup>
-<col width="30%">
-<col width="69%">
+<col width="31%">
+<col width="68%">
 </colgroup>
 <thead><tr class="header">
 <th>Package</th>
@@ -94,27 +94,27 @@
 <tbody>
 <tr class="odd">
 <td><strong>QCkit</strong></td>
-<td><a href="https://nationalparkservice.github.io/QCkit/" class="external-link uri">https://nationalparkservice.github.io/QCkit/</a></td>
+<td><a href="https://nationalparkservice.github.io/QCkit" class="external-link uri">https://nationalparkservice.github.io/QCkit</a></td>
 </tr>
 <tr class="even">
 <td>EMLassemblyline (EAL)</td>
-<td><a href="https://ediorg.github.io/EMLassemblyline/" class="external-link uri">https://ediorg.github.io/EMLassemblyline/</a></td>
+<td><a href="https://ediorg.github.io/EMLassemblyline" class="external-link uri">https://ediorg.github.io/EMLassemblyline</a></td>
 </tr>
 <tr class="odd">
 <td>EML</td>
-<td><a href="https://www.cran-e.com/package/EML" class="external-link uri">https://www.cran-e.com/package/EML</a></td>
+<td><a href="https://cran.r-project.org/package=EML" class="external-link uri">https://cran.r-project.org/package=EML</a></td>
 </tr>
 <tr class="even">
 <td><strong>EMLeditor</strong></td>
-<td><a href="https://nationalparkservice.github.io/EMLeditor/" class="external-link uri">https://nationalparkservice.github.io/EMLeditor/</a></td>
+<td><a href="https://nationalparkservice.github.io/EMLeditor" class="external-link uri">https://nationalparkservice.github.io/EMLeditor</a></td>
 </tr>
 <tr class="odd">
 <td><strong>DPchecker</strong></td>
-<td><a href="https://nationalparkservice.github.io/DPchecker/" class="external-link uri">https://nationalparkservice.github.io/DPchecker/</a></td>
+<td><a href="https://nationalparkservice.github.io/DPchecker" class="external-link uri">https://nationalparkservice.github.io/DPchecker</a></td>
 </tr>
 <tr class="even">
 <td><strong>NPSutils</strong></td>
-<td><a href="https://nationalparkservice.github.io/NPSutils/" class="external-link uri">https://nationalparkservice.github.io/NPSutils/</a></td>
+<td><a href="https://nationalparkservice.github.io/NPSutils" class="external-link uri">https://nationalparkservice.github.io/NPSutils</a></td>
 </tr>
 </tbody>
 </table>
@@ -122,10 +122,17 @@
 <p>(R packages in <strong>bold</strong> are developed by NPS)</p>
 </div>
 <div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pkg_install.html" class="external-link">pkg_install</a></span><span class="op">(</span><span class="st">"nationalparkservice/NPSdataverse"</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/nationalparkservice/NPSdataverse" class="external-link">NPSdataverse</a></span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
 <h2 id="trouble-shooting-installation">Trouble shooting installation<a class="anchor" aria-label="anchor" href="#trouble-shooting-installation"></a>
 </h2>
 <p>Each package within the NPSdataverse has a number of dependencies, most of which are hosted on CRAN. During the initial install of NPSdataverse, you may be prompted to install or update these dependencies. The initial installation can take some time and require multiple iterative package updates/installs. Depending on how they were initially installed, some dependent packages may fail update or to install. In this case you can try running</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/libPaths.html" class="external-link">.libPaths</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>to find where your packages are located on your local machine. Navigate to that location and delete the offending package. Then try to re-install.</p>
 </div>

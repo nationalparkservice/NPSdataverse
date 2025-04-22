@@ -40,6 +40,13 @@ NPSdataverse will install the following R packages:
 
 (R packages in **bold** are developed by NPS)
 
+## Usage
+
+``` r
+pak::pkg_install("nationalparkservice/NPSdataverse")
+library(NPSdataverse)
+```
+
 ## Trouble shooting installation
 
 Each package within the NPSdataverse has a number of dependencies, most
