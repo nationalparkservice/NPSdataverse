@@ -25,10 +25,12 @@ Imports:
     EMLeditor (>= 1.0.0),
     NPSutils (>= 1.0.0),
     QCkit (>= 1.0.0),
-    rstudioapi,
     utils,
-    remotes,
-    lifecycle
+    lifecycle,
+    gh,
+    readr,
+    stringr,
+    tibble
 Remotes: 
     nationalparkservice/DPchecker,
     nationalparkservice/EMLeditor,
