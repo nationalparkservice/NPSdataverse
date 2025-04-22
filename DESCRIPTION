@@ -38,7 +38,9 @@ Remotes:
     EDIorg/EMLassemblyline@v3.5.5
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
 URL: https://github.com/nationalparkservice/NPSdataverse
 BugReports: https://github.com/nationalparkservice/NPSdataverse/issues
+Config/testthat/edition: 3
