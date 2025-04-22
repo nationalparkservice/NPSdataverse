@@ -27,14 +27,14 @@ pak::pkg_install("nationalparkservice/NPSdataverse")
 
 NPSdataverse will install the following R packages:
 
-| Package               | Location                                           |
-|-----------------------|----------------------------------------------------|
-| **QCkit**             | <https://nationalparkservice.github.io/QCkit/>     |
-| EMLassemblyline (EAL) | <https://ediorg.github.io/EMLassemblyline/>        |
-| EML                   | <https://www.cran-e.com/package/EML>               |
-| **EMLeditor**         | <https://nationalparkservice.github.io/EMLeditor/> |
-| **DPchecker**         | <https://nationalparkservice.github.io/DPchecker/> |
-| **NPSutils**          | <https://nationalparkservice.github.io/NPSutils/>  |
+| Package               | Location                                          |
+|-----------------------|---------------------------------------------------|
+| **QCkit**             | <https://nationalparkservice.github.io/QCkit>     |
+| EMLassemblyline (EAL) | <https://ediorg.github.io/EMLassemblyline>        |
+| EML                   | <https://cran.r-project.org/package=EML>          |
+| **EMLeditor**         | <https://nationalparkservice.github.io/EMLeditor> |
+| **DPchecker**         | <https://nationalparkservice.github.io/DPchecker> |
+| **NPSutils**          | <https://nationalparkservice.github.io/NPSutils>  |
 
 ------------------------------------------------------------------------
 
