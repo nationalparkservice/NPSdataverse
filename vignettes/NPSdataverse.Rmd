@@ -1,6 +1,7 @@
 ---
 title: "NPSdataverse"
 output: rmarkdown::html_vignette
+bibliography: ../paper.bib
 vignette: >
   %\VignetteIndexEntry{NPSdataverse}
   %\VignetteEngine{knitr::rmarkdown}
@@ -14,7 +15,30 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup, eval=FALSE}
-devtools::install_github("nationalparkservice/NPSdataverse")
+## Summary
+
+The [NPSdataverse](https://nationalparkservice.github.io/NPSdataverse/) is a suite of R packages developed to create, document, publish, and access data and metadata in open and machine-readable formats.NPSdataverse is modeled off of the tidyverse concept of several packages built with a common goal [@Wickham2019].The NPSdataverse supports Ecological Metadata Language (EML) metadata and .csv data files. Some of the constituent R packages ([EML](https://docs.ropensci.org/EML/) and [EMLassemblyline](https://ediorg.github.io/EMLassemblyline/)) are general-use and aimed at authoring EML documents. Other R packages ([QCkit](https://nationalparkservice.github.io/QCkit/), [EMLeditor](https://nationalparkservice.github.io/EMLeditor/), [DPchecker](https://nationalparkservice.github.io/DPchecker/) and [NPSutils](https://nationalparkservice.github.io/NPSutils/)) are designed and maintained by the National Park Service (NPS).Although many functions within the NPSdataverse packages are NPS-specific (particularly some API calls), whenever possible the functions are written so that they can also be used by the general public. Scientists conducting permitted research in NPS units can utilize the NPSdataverse to efficiently and consistently meet the data delivery requirements of their permits. Additionally, the packages will be useful for data management plans in a wide variety of grant proposals and for anyone that needs to create open data and machine-readable metadata. The ability to swiftly and easily author, edit, and check Ecological Metadata Language (EML) metadata in a reproducible fashion will be useful for data publication at any number of repositories or data journals. Finally, a scripted interface for downloading NPS data and leveraging metadata while loading it into R or other platforms for subsequent analyses and visualizations will be useful to researchers in the government, academia, and industry as well as the public. 
+
+
+## Usage
+
+The [NPSdataverse](https://nationalparkservice.github.io/NPSdataverse/) package is a meta-package that loads packages within the NPSdataverse into R [@Baker_NPSdataverse2025]. The NPSdataverse provides a convenient way to download, install, and load many of the R packages needed to create and access data packages, which consist of rich Ecological Metadata Language metadata and .csv data files:
+
+```{r setup, eval = FALSE}
+pak::pkg_install("nationalparkservice/NPSdataverse")
 library(NPSdataverse)
 ```
+
+`NPSdataverse` will automatically check that the latest version of each R package is being loaded: either from the main development branch on [GitHub.com](https://github.com) or the latest version on [CRAN](https://cran.r-project.org/). If updates are indicated, the user will be alerted and given instructions on how to update the relevant packages. To prevent API limits at GitHub (and to facilitate scripted workflows such as those at High Performance Computing facilities), `NPSdataverse` only checks for updates from an interactive R session and will skip checks when the system is not on-line or GitHub.com is not responding.
+
+
+## Statement of Need
+
+Following a movement for transparency in scientific research and data accessibility, the U.S. implemented the federal OPEN Government Data Act [@OpenData2018]. The Open Data Act mandates that federal agencies provide data in open formats with metadata. Subsequently, many funding agencies such as the National Science Foundation have required grant awardees make their data public, often including metadata [@nsf2015]. Multiple publishers have followed suit [@Wiley2022; @Springer2023] and require data availability statements upon publication. 
+
+One goal of open science, and requirement of the recent "Nelson Memo" from the U.S. Office of Science and Technology Policy [@Nelson2022] is to make data FAIR: findable, inter-operable, accessible, and reuseable [@Wilkinson2016]. These goals are often achieved by including structured, machine-readable metadata that conforms to a defined schema along with the data. Ecological Metadata Language Metadata (EML) is one metadata standard that is particularly amenable to studies with rich taxonomy [@Jones2006; @EML2019]. It has been adopted by multiple research organizations including the Ecological Data Initiative (EDI), National Ecological Observatory Network (NEON), Global Biodiversity Information Facility (GBIF), Swedish Biodiversity Data Infrastructure (SBDI), French Biodiversity Hub ("Pole National de Donnees de Biodiversite"), U.S. National Park Service, and others. 
+
+Nevertheless, actual availability of data and metadata varies [@Federer2018; @Tedersoo2021], perhaps because there is a need for more infrastructure and tools to meet the goals of open data and open science [@Huston2019]. Multiple solutions have been presented, including ezEML, a tool for authoring metadata in Ecological Metadata Language and publishing data and metadata to a repository [@Vanderbilt2022]. ezEML has an intuitive graphical user interface with a relatively low learning curve; however, it does have some drawbacks. For instance, ezEML is not scriptable, which makes repeated deployments of the same or similar workflows challenging and can limit reproducibility. ezEML also requires that the user upload their data to an external site for processing, which may not be suitable for sensitive data. Here we introduce the NPSdataverse, a series of R packages for authoring, editing, and checking EML metadata locally in a robust, repeatable, and scriptable fashion. R Packages within the NPSdataverse leverage earlier work using R to create and manipulate XML based EML files [@Boettiger2019]. Building upon that framework, we add user-friendly EML creation workflows; integration with taxonomic databases; fast, easy editing of existing metadata; congruence checks to test correspondence between data and metadata; and integration with public repositories such as the National Park Service's [DataStore](https://irma.nps.gov/DataStore/). R packages within the NPSdataverse also include functions that expedite data quality control, facilitate data interoperability, provide the ability to download data directly from DataStore, and leverage the rich EML associated with the data regardless of repository of origin.
+
+
+## References
