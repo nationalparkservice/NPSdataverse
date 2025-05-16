@@ -17,7 +17,7 @@ package_version <- function(x) {
 }
 
 # Check which of the main NPSdataverse packages
-# are currently loaded
+# are currently loaded and return a list of those that are NOT loaded
 # The search() function  returns a character vector containing packages
 # attached to the current R session.
 check_loaded <- function() {

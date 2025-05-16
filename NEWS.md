@@ -1,6 +1,10 @@
 # NPSdataverse 1.0.1 (development version)
+2025-04-21
+* Update JOSS badge to "in review"
+
 2025-03-12
 * Updated to MIT license, which is OSI approved and NPS approved and a standard R license.
+
 2025-03-10
 * Updated license to OSI-approved "Zero-Clause BSD" in support of JOSS submission.
 
