@@ -1,4 +1,4 @@
-# NPSdataverse 1.0.1 (development version)
+# NPSdataverse 1.1.0
 2025-04-21
 * Update JOSS badge to "in review"
 
