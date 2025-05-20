@@ -1,20 +1,3 @@
-
-text_col <- function(x) {
-
-  # If RStudio API is not available and/or does not have the getThemeInfo
-  # button, exit function leaving default color of black
-  if (!rstudioapi::isAvailable() || !rstudioapi::hasFun("getThemeInfo")) {
-    return(x)
-  }
-
-  # Get theme information for RStudio
-  theme <- rstudioapi::getThemeInfo()
-
-  # If it's a dark theme, make the text color white; otherwise black.
-  if (isTRUE(theme$dark)) crayon::white(x) else crayon::black(x)
-
-}
-
 # Format the package version to indicate development versions when printed on
 # the command line
 package_version <- function(x) {
@@ -26,19 +9,12 @@ package_version <- function(x) {
   # as happens with development packages, coerce those
   # dev version numbers to red
   if (length(version) > 3) {
-    version[4:length(version)] <- crayon::red(as.character(version[4:length(version)]))
+    version[4:length(version)] <- cli::col_red(as.character(version[4:length(version)]))
   }
 
   # concatenate the result
   paste0(version, collapse = ".")
-
 }
-
-# Create a message function for start-up that dynamically changes text color
-msg <- function(...) {
-  packageStartupMessage(text_col(...))
-}
-
 
 # Check which of the main NPSdataverse packages
 # are currently loaded and return a list of those that are NOT loaded
@@ -53,5 +29,3 @@ check_loaded <- function() {
 is_attached <- function(x) {
   paste0("package:", x) %in% search()
 }
-
-
