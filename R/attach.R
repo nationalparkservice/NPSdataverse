@@ -1,4 +1,3 @@
-
 pkgs <- c("DPchecker", "EMLeditor", "NPSutils", "QCkit", "EML", "EMLassemblyline")
 
 NPSdataverse_attach <- function() {
@@ -16,7 +15,7 @@ NPSdataverse_attach <- function() {
   # "Attaching packages" on the left-hand side and
   # NPSdataverse with the package version on the right-hand side
   load_header <- cli::rule(
-    left = crayon::bold("Attaching packages"),
+    left = cli::style_bold("Attaching packages"),
     right = paste0("NPSdataverse ", package_version("NPSdataverse"))
   )
 
@@ -24,8 +23,8 @@ NPSdataverse_attach <- function() {
   versions <- vapply(to_load, package_version, character(1))
 
   packages <- paste0(
-    crayon::green(cli::symbol$tick), " ", crayon::blue(format(to_load)), " ",
-    crayon::col_align(versions, max(crayon::col_nchar(versions)))
+    cli::col_green(cli::symbol$tick), " ", cli::col_blue(format(to_load)), " ",
+    cli::ansi_align(versions, max(cli::ansi_nchar(versions)))
   )
 
   # Format for two columns
@@ -39,8 +38,8 @@ NPSdataverse_attach <- function() {
   info <- paste0(packages[col1], "     ", packages[-col1])
 
   # display the message!
-  msg(load_header)
-  msg(paste(info, collapse = "\n"))
+  packageStartupMessage(load_header)
+  packageStartupMessage(paste(info, collapse = "\n"))
 
   # Load the constituent packages!
   # character.only = TRUE must be used in order to
@@ -51,7 +50,6 @@ NPSdataverse_attach <- function() {
 
   # Thanks for playing
   invisible(to_load)
-
 }
 
 #' Detach all loaded packages
@@ -87,7 +85,6 @@ NPSdataverse_packages <- function() {
   names <- vapply(strsplit(parsed, "\\s+"), "[[", 1, FUN.VALUE = character(1))
 
   return(names)
-
 }
 
 #' Check internet connectivity
@@ -101,11 +98,13 @@ NPSdataverse_packages <- function() {
 #'
 #' @examples
 #' is_online()
-is_online <- function(site="https://github.com/") {
-  tryCatch({
-    readLines(site,n=1)
-    TRUE
-  },
-  warning = function(w) invokeRestart("muffleWarning"),
-  error = function(e) FALSE)
+is_online <- function(site = "https://github.com/") {
+  tryCatch(
+    {
+      readLines(site, n = 1)
+      TRUE
+    },
+    warning = function(w) invokeRestart("muffleWarning"),
+    error = function(e) FALSE
+  )
 }
