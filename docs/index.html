@@ -129,8 +129,9 @@
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/nationalparkservice/NPSdataverse" class="external-link">NPSdataverse</a></span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="trouble-shooting-installation">Trouble shooting installation<a class="anchor" aria-label="anchor" href="#trouble-shooting-installation"></a>
+<h2 id="troubleshooting-installation">Troubleshooting installation<a class="anchor" aria-label="anchor" href="#troubleshooting-installation"></a>
 </h2>
+<p>If <code><a href="https://pak.r-lib.org/reference/pkg_install.html" class="external-link">pak::pkg_install()</a></code> throws an error, try <code>remotes::install_github("nationalparkservice/NPSdataverse")</code> instead.</p>
 <p>Each package within the NPSdataverse has a number of dependencies, most of which are hosted on CRAN. During the initial install of NPSdataverse, you may be prompted to install or update these dependencies. The initial installation can take some time and require multiple iterative package updates/installs. Depending on how they were initially installed, some dependent packages may fail update or to install. In this case you can try running</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/libPaths.html" class="external-link">.libPaths</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
@@ -188,9 +189,9 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Robert Baker <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-7591-5035" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Judd Patterson <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0951-7917" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Joe DeVivo <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0414-7865" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Robert Baker <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-7591-5035" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
+<li>Judd Patterson <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0951-7917" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
+<li>Joe DeVivo <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0414-7865" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
 </ul>
 </div>
 
@@ -213,7 +214,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.2.</p>
 </div>
 
       </footer>
