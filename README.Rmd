@@ -63,7 +63,9 @@ library(NPSdataverse)
 ```
 
 
-## Trouble shooting installation
+## Troubleshooting installation
+
+If `pak::pkg_install()` throws an error, try `remotes::install_github("nationalparkservice/NPSdataverse")` instead.
 
 Each package within the NPSdataverse has a number of dependencies, most of which
 are hosted on CRAN. During the initial install of NPSdataverse, you may be
