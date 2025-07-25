@@ -1,5 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nationalparkservice/NPSdataverse/actions/workflows/R-CMD-check.yaml)
@@ -47,7 +48,10 @@ pak::pkg_install("nationalparkservice/NPSdataverse")
 library(NPSdataverse)
 ```
 
-## Trouble shooting installation
+## Troubleshooting installation
+
+If `pak::pkg_install()` throws an error, try
+`remotes::install_github("nationalparkservice/NPSdataverse")` instead.
 
 Each package within the NPSdataverse has a number of dependencies, most
 of which are hosted on CRAN. During the initial install of NPSdataverse,
